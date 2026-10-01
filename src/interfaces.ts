@@ -77,3 +77,40 @@ let admin : Admin = {
     permissions : ["permissioon1", "Permission2"],
 };
 console.log(admin);
+
+
+
+
+//Interface merging
+//interface with same names are combined into one.
+
+interface Goat {
+    name : string,
+};
+
+interface Goat {
+    status : string,
+};
+
+//Goat vanne interface 2 choti banaye pani tyo sanag 2ta ma vako sabai properties hunxa
+//example we can write: 
+const goat : Goat = {
+    name : "Cristiano Ronaldo",
+    status : "high",
+};
+console.log(goat);  //This will not give any error
+
+
+
+
+//Interface fopr functions
+
+interface Add {
+    (a : number, b: number) : number //parameter ko type and function ko return type
+};
+
+let add : Add = (a, b)=> { // arrow function banaune. Not compulsary but arrow function nadida red line dekhayo so.
+    return a + b ;
+}
+
+console.log(add(5, 6));
