@@ -34,3 +34,16 @@ function greet2(name : string = "bro"){
 greet2();
 
 
+
+
+
+//Functions return type
+function multiply (a : number, b: number) : number {  //Here the function retur a number
+    return a * b;
+};
+let result = multiply(5, 4);
+
+console.log(result); //the resulkt is 20 which is a number
+
+
+//other functions return types are string, boolean, array, object, void
