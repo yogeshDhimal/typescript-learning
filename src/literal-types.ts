@@ -10,4 +10,4 @@ direction = "right";
 console.log(direction);
 
 //yesle error dinxa. Because direction can be either left or right
-direction = "down";
+// direction = "down";
