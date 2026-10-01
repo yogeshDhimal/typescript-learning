@@ -46,3 +46,22 @@ function myValue<T> (items : T[]) : T[] { // purai array retunr garne vane T[], 
 
 let answer = myValue(["Apple", 10, 67, "Dog"]);
 console.log(answer);
+
+
+
+
+
+//generics with objects
+function getObject<T>(obj : T) : T {
+    return obj;
+}
+
+// aaba yo banauna milxa 
+
+//ts le aafai bujhxa T vaneko name : string, age : number vanera
+let user = getObject({
+    name : "Yogesh",
+    age : "69",
+})
+
+console.log(user);
