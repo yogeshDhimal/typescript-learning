@@ -34,3 +34,15 @@ function multiple <T, U> (value1 : T, Value2 : U) : [T, U] {
 
 let result = multiple(12, "Slime");
 console.log(result);
+
+
+
+
+//Generics with array
+
+function myValue<T> (items : T[]) : T[] { // purai array retunr garne vane T[], kuai eauta valur return garne vaye T matra
+    return items; // kunai eauta value chaiyo vane position specify garne, like itmes[0] 
+}
+
+let answer = myValue(["Apple", 10, 67, "Dog"]);
+console.log(answer);
