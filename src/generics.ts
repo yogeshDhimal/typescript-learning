@@ -91,3 +91,22 @@ let result2 : Box<number> = {
     value : 222,
 }
 console.log(result2);
+
+
+
+//Generic Type Aliases.
+type Animal <T> = {
+    name : T;
+};
+
+let animal : Animal<string> = {
+    name : "Buffalo",
+} ;
+console.log(animal);
+
+let animal2: Animal<number> = {
+    name: 123,
+};
+console.log(animal2);
+
+//Genrics type aliases and generic interface similar ho. Concept eautai ho. 
