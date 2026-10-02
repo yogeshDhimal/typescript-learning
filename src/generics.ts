@@ -65,3 +65,29 @@ let user = getObject({
 })
 
 console.log(user);
+
+
+
+
+
+///Generics interfaces
+//An interface that can work with different types
+
+interface Box<T> {
+    value : T;//yesma chai semi colon use garne
+} // yesma semi colon chaiyena. 
+
+
+
+
+//T ko that ma string, number kita junai type in rakhda vayo. 
+let result1 : Box<string> = {
+    value : "Value",
+};
+console.log(result1); 
+
+
+let result2 : Box<number> = {
+    value : 222,
+}
+console.log(result2);
