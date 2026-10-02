@@ -23,3 +23,17 @@ let user2 : Required<User> = { //This means all the property are compulsary.even
     email : "userb@gmail.com"
 }
 console.log(user2);
+
+
+
+
+//3.Pick creates the new type by selecting only the properties we want from existing type. 
+
+type User2 = Pick<User, "age" | "email"> // Now this user 2 contain those types 
+
+const userc: User2 = {
+    email: "Yogesh",
+    age: 21
+};
+
+console.log(userc);
