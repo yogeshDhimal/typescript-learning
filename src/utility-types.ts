@@ -37,3 +37,19 @@ const userc: User2 = {
 };
 
 console.log(userc);
+
+
+// 4. Omit: it creates a new typ by removung the properties that we do not want.
+// example 
+
+interface Fruits {
+    name : string;
+    price : number;
+}
+
+type FruitsWithoutname = Omit<Fruits, "name">
+
+let fruit : FruitsWithoutname = {
+    price : 2000
+}
+console.log(fruit);
