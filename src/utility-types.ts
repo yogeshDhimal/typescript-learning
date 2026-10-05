@@ -53,3 +53,19 @@ let fruit : FruitsWithoutname = {
     price : 2000
 }
 console.log(fruit);
+
+
+
+
+// 5. Record
+//Record creates the object with specific keys ans specific value type. 
+
+type Age = Record<string, number>; //Here it means key is string and value is number.
+
+const age : Age = {
+    age : 35
+}
+
+console.log(age)
+
+
