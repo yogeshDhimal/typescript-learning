@@ -94,3 +94,12 @@ movie.name = "Movie 2";
 
 
 
+//7. ReturnType gives the return type of a function
+
+function name () {
+    return "Yogesh";
+}
+
+type typeOfName = ReturnType<typeof name>;
+
+
