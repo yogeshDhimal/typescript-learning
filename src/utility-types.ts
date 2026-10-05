@@ -66,6 +66,31 @@ const age : Age = {
     age : 35
 }
 
-console.log(age)
+console.log(age);
+
+
+
+// 6. Readonly
+// Readonly le object ko sabai properties lai readonly banauxa. Eauta object banayepaxi paxi teslai change agrna mildaina. 
+
+interface Movie {
+    name : string;
+    releaseYear : number;
+    duration : number;
+    genre : string[];
+}
+
+let movie : Readonly<Movie> = {
+    name : "Movie 1",
+    releaseYear : 2020,
+    duration : 130,
+    genre : ["Adventure", "Fantasy", "Isekai"],
+};
+console.log(movie);
+
+//yesma error aauxa. change garna mildaina
+movie.name = "Movie 2";
+
+
 
 
